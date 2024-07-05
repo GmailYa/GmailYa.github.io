@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Войти в систему</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=fCeUuOCSIxZv9eB5etMMb8HV_ApSf4Hzm4Adv71uo9dFpcXqr3Rf4z33Ecl0RduyQDV7O17MxB4UhS9RVIIATuhoT4x-8Ha1AO2-ES10V5fTwF8Prip_baEq8YHWRmKoVZfEqFNrMl9rH2-nQAvpqNpZBwbA2QQ8pPF7xnb9fH8Q6rDFUnwzZgWC4ROZ6_B0-q5cM2G1A9LRa2MpKL3iURIweYLr1ddD3SxbIJXIIyqzO4LfI1eOPjaiVF1zKIbnIPuR0XQUe7c0hpvejeSViU3eQhdnvqXZ6c3WQ8-C4YHciM1asCSj01yFNWrJe_VcDlXiHhym8Y6mDn2yLXWgW3PtuTPH2rfen7c93JZGdgw9O-vqqES3WgiAoWdy2PtgKuTqTZsup1kAx2bYekuMuFQ9J1ODNWXs3BoGTYiecP6HZlFp_S3HKeEkkZXhTcazAyK31Nm106jAwWcXGRn_UFDjvxv-93AgkDH4bMH7SYg" charset="UTF-8"></script></head>
+<body>
+<h1>Страница для проверки робота</h1>
+<label id="passwordlabel">Пароль</label>
+<input id="login-form-submit" name="login">
+<table id='tbl'>
+<tr>
+<th>Header1</th>
+<th>Header2</th>
+<th>Header3</th>
+</tr>
+<tr>
+<td>Val1</td>
+<td>Val2</td>
+<td>Val3</td>
+</tr>
+<tr>
+<td>Val4</td>
+<td>Val5</td>
+<td>Val6</td>
+</tr>
+</table>
+<select id='sl'>
+ <option value="0" id="o1">Select Item</option>
+ <option value="1" id="o2">Item1</option>
+ <option value="2" id="o2">Item2</option>
+ <option value="3" id="o3">Item3</option>
+</select>
+<button id='chk' onclick="getRes()" ondblclick="getRes1()">Test</button>
+<input id='rs'></input>
+<input id="login-form-username" name="os_username"></input>
+<div>
+	<input type="checkbox" id="chkid"/>
+	<label for="chk">Checkbox</label>
+</div>
+<div>
+	<img id="imgid" src=""/>
+</div>
+<form action = "subpage.html">
+	<button id='btnlnk'>Переход на другую страницу</button>
+</form>
+<section>
+	<style scoped>
+		#btm_btn {
+			color: red;
+			margin-top: 1000px
+		}
+	</style>
+	<button id="btm_btn">Click Me</button>
+</section>
+<script>
+function getRes()
+{
+	document.getElementById("rs").value = document.getElementById("sl").value
+}
+
+function getRes1()
+{
+	document.getElementById("rs").value = 111
+}
+
+document.getElementById('chk').onmousedown = function(event) {
+	if (event.which ==3) {
+		document.getElementById("rs").value = 333;
+	} else if (event.which ==2) {
+		document.getElementById("rs").value = 444;
+	}
+}
+
+</script>
+</body>
+</html>
